@@ -11,11 +11,12 @@ public class navigatingtonextpage_step {
 	@Given("^user opens the demoblazeApplication in browser$")
 	public void user_opens_the_demoblazeApplication_in_browser() 
 	{
-	np.url();
+	np.url("Chrome");
 	}
 	@When("^the user clicks on nextpage$")
 	public void the_user_clicks_on_nextpage() 
 	{
+		
 np.demoblaze_homePage();
 	}
 
