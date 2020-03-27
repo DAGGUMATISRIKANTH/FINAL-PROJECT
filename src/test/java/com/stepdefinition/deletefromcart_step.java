@@ -13,6 +13,7 @@ public class deletefromcart_step {
 	@Given("^user launched Demoblaze$")
 	public void user_launched_Demoblaze() 
 	{
+		dc.url("Chrome");
 dc.demoblaze_homePage();
 	}
 
