@@ -11,6 +11,7 @@ public class Addtocart_step {
 	@Given("^user launched Demoblazewebsite$")
 	public void user_launched_Demoblazewebsite()
 	{
+		ac.url("Chrome");
 	ac.demoblaze_homePage();
 	}
 
