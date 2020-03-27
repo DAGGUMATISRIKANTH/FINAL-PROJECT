@@ -1,4 +1,5 @@
 package com.runners;
+import org.junit.AfterClass;
 import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
@@ -17,5 +18,8 @@ import cucumber.api.junit.Cucumber;
 
 )
 public class CopyOfTestRunner {
-
+	@AfterClass
+	public static void writeExtentReport() {
+	    Reporter.loadXMLConfig("src\\main\\resources\\extent-config.xml");
+	}
 }

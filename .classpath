@@ -34,5 +34,14 @@
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/SRIKANTH/Desktop/Selenium-jars-master/poi-bin-4.1.0-20190412/poi-4.1.0/poi-ooxml-4.1.0.jar"/>
 	<classpathentry kind="src" path="/DemoBlazeApplication"/>
+	<classpathentry kind="lib" path="C:/Users/SRIKANTH/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="info.cukes"/>
+			<attribute name="maven.artifactId" value="gherkin"/>
+			<attribute name="maven.version" value="2.12.2"/>
+			<attribute name="maven.scope" value="provided"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

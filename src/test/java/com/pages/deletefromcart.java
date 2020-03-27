@@ -15,6 +15,7 @@ import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 
 	public class deletefromcart {
 WebDriver driver;
@@ -31,13 +32,13 @@ WebDriver driver;
 			else if(browser.equalsIgnoreCase("Firefox"))
 			{
 				System.setProperty("webdriver.firefox.driver", "D:\\java app\\geckodriver.exe");
-				driver = new ChromeDriver();
+				driver = new FirefoxDriver();
 			}
 			//To launch InternetExplorerDriver
 			else if(browser.equalsIgnoreCase("IEDriver"))
 			{
 				System.setProperty("webdriver.ie.driver", "D:\\java app\\IEDriverServer.exe");
-				driver = new ChromeDriver();
+				driver = new InternetExplorerDriver();
 			}
 			//To Maximize the Window
 		driver.manage().window().maximize();
