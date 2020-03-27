@@ -11,6 +11,7 @@ public class clickonlaptops_step {
 	@Given("^user opens the demoblazesite$")
 	public void user_opens_the_demoblazesite()
 	{
+		cl.url("Chrome");
 	cl.demoblaze_homePage();
 	}
 
