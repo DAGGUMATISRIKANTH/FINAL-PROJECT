@@ -6,17 +6,13 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(
-		features="features",
-		glue="stepDefinition",
-		plugin= {"html:target/cucumber-html-report",
-				"json:target/cucumber.json",
-				"pretty:target/cucumber-pretty.txt",
-				"usage:target/cucumber-usage.json",
-				"junit:target/cucumber-results.xml"}
+@CucumberOptions(features="src/main/resources/Feature/Testcase.feature",
 		
-
-)
+plugin = {"com.cucumber.listener.ExtentCucumberFormatter:reports/Extentreports/Extentreport.html","html:test-output","json:json_output/cucumber.json","junit:junit_xml/cucumber.xml"},
+tags= {"@tc01_demoblazeloginwithvaliddetails,@tc02_ClickingonLaptops,@tc03_Navigatetonextpage,@tc04_Addtocart,@tc05_deletefromcart"},
+monochrome=true,
+glue= {"Com.Stepdefinition"}
+		 )
 public class CopyOfTestRunner {
 	@AfterClass
 	public static void writeExtentReport() {
